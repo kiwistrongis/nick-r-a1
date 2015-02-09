@@ -19,6 +19,9 @@ L <- layout.fruchterman.reingold(G)
 L[,1]=(L[,1]-min(L[,1]))/(max(L[,1])-min(L[,1]))*2-1
 L[,2]=(L[,2]-min(L[,2]))/(max(L[,2])-min(L[,2]))*2-1
 
+# set up png?
+png( "plot.png", width = 1200, height = 800,)
+
 # Plot:
 plot(G,layout=L,vertex.size=0,vertex.frame.color="#00000000",vertex.label="")
 
