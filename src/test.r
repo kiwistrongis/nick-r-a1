@@ -6,6 +6,8 @@
 set.seed(1)
 adj <- matrix(sample(0:1,10^2,T,prob=c(0.8,0.2)),10,10)
 
+library( 'igraph')
+
 # Make the graph
 G <- graph.adjacency(adj,mode="undirected")
 
